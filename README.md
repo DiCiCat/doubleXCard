@@ -1,3 +1,6 @@
+# doubleXCard
+implemente deux cartes X différentes. basé sur le code originel de sk1mble.
+
 # XCard
 
 A module for Foundry VTT that implements the X-Card safety tool by John Stavropoulos. http://tinyurl.com/x-card-rpg
