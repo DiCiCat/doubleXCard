@@ -1,14 +1,14 @@
 {
-  "id": "XCard",
-  "title": "X-Card",
-  "description": "A module that implements the X-Card safety system.",
+  "id": "doubleXCard",
+  "title": "2X-Card",
+  "description": "A module that implements the X-Card safety system, but with 2 différents cards",
   "authors": [
     {
-      "name": "Richard Bellingham",
+      "name": "original code:Richard Bellingham, modified by:DiCiCat",
       "flags": {}
     }
   ],
-  "url": "https://github.com/Sk1mble/XCard",
+  "url": "https://github.com/DiCiCat/doubleXCard",
   "version": "0.0.13",
   "compatibility": {
     "minimum": "0.6.0",
@@ -32,6 +32,6 @@
     }
   ],
   "socket": true,
-  "manifest": "https://raw.githubusercontent.com/Sk1mble/XCard/master/module.json",
-  "download": "https://github.com/Sk1mble/XCard/archive/0.0.13.zip"
+  "manifest": "https://raw.githubusercontent.com/DiCiCat/doubleXCard/master/module.json",
+  "download": "https://github.com/DiCiCat/doubleXCard/archive/0.0.13.zip"
 }
