@@ -6,7 +6,7 @@ class XCard extends Application {
 
     static get defaultOptions() {
         const options = super.defaultOptions;
-        options.template = "modules/XCard/templates/XCard.html";
+        options.template = "modules/doubleXCard/templates/XCard.html";
         options.title = "XCard.WindowTitle";
         options.id = "XCard";
         options.resizable = false;
