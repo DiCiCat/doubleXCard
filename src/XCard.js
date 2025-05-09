@@ -40,13 +40,43 @@ class XCard extends Application {
     }
 }
 
-Hooks.on('getSceneControlButtons', function (hudButtons) {
+Hooks.on('getSceneControlButtons', function(hudButtons)
+{
     const xCardIcon = game.i18n.localize("XCard.ButtonFAIcon");
     const xCardIcon2 = game.i18n.localize("XCard.ButtonFAIcon2");
     const group = hudButtons.find(b => b.name === "token");
+    
     if (!group) return;
-
-    group.tools.push(
+    
+    if (foundry.utils.isNewerVersion(game.version, 13)){
+        group.tokens.tools.xCard = {
+            name: "xCard1",
+            title: "Orange",
+            icon: xCardIcon,
+            onChange: async (event, active) => {
+              if ( active ) {
+                let xc = new XCard();
+                xc.render(true);
+                game.socket.emit("module.XCard", {"event": "XCard1"})
+              }
+            },
+            button: true
+          };
+        {
+          name: "xCard2",
+            title: "Red",
+            icon: xCardIcon2,
+            onChange: async (event, active) => {
+              if ( active ) {
+                let xc = new XCard();
+                xc.render(true);
+                game.socket.emit("module.XCard", {"event": "XCard2"})
+              }
+            },
+            button: true
+          };
+    } else {
+        group.tools.push(
         {
             name: "XCard1",
             title: "Orange",
@@ -72,6 +102,8 @@ Hooks.on('getSceneControlButtons', function (hudButtons) {
             }
         }
     );
+        }
+    }
 });
 
 Hooks.once('ready', async function () {
