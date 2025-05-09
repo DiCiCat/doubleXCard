@@ -33,5 +33,5 @@ le&ase{
   ],
   "socket": true,
   "manifest": "https://raw.githubusercontent.com/DiCiCat/doubleXCard/master/module.json",
-  "download": "https://github.com/DiCiCat/doubleXCard/release/0.0.13.zip"
+  "download": "https://github.com/DiCiCat/doubleXCard/releases/0.0.13.zip"
 }
